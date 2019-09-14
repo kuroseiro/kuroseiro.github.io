@@ -7,58 +7,67 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/estilo.css"
-  ><link href="img/icon.png" sizes="32x32" rel="icon">
-  <script src="js/boton.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="img/icon.png" sizes="32x32" rel="icon">
   <title>Blog</title>
 </head>
 <body>
+  <header>
+    <h1 class="display-1">Jairo Sebastian</h1>
+  </header>
+  <div class="blog-header bg-dark barra">
+    <nav class="navbar d-flex justify-content-between">
+      <a href="index.html" class="p-2"><i class="fas fa-home"></i>&nbspInicio</a>
+      <a href="proyect.html" class="p-2"><i class="fas fa-folder"></i>&nbspProyectos</a>
+      <a href="visual.html" class="p-2"><i class="fas fa-eye"></i>&nbspAudiovisual</a>
+      <a href="about.html" class="p-2"><i class="fas fa-address-card"></i>&nbspSobre mí</a>
+    </nav>
+  </div>
   <div class="container">
-    <header>
-      <h1 class="display-1">Jairo Sebastian</h1>
-    </header>
-    <div class="blog-header bg-dark barra">
-      <nav class="navbar d-flex justify-content-between">
-        <a href="index.html" class="p-2"><i class="fas fa-home"></i>&nbspInicio</a>
-        <a href="proyect.html" class="p-2"><i class="fas fa-folder"></i>&nbspProyectos</a>
-        <a href="visual.html" class="p-2"><i class="fas fa-eye"></i>&nbspAudiovisual</a>
-        <a href="about.html" class="p-2"><i class="fas fa-address-card"></i>&nbspSobre mí</a>
-      </nav>
-    </div>
-    <div>
-      <h2 class="h2">Audiovisual</h2>
-      <hr>
-      <div class="row mb-2 section">
-        <div class="col tarjeta">
-          <a href="img/img_1.png" target="_blank">
-            <img src="img/img_1.png" alt="Multiplicidad">
-          </a>
-          <p>Este es un mapa de la multiplicidad que se basa en el libro "la multiplicidad" escrito por Italo Calvino.</p>
-        </div>
-        <div class="col tarjeta">
-          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/692309063&color=%23071387&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-          <div class="menu">
-            <li class="nav-esc" id='referencia'>
-              <a href="#referencia" class="btn">
-                <i class="fas fa-list"></i>&nbspReferencias
-                <div class="menuInterno">
-                    <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/398907/simple/small/" width="375" height="30"></iframe>
-                    <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/396968/simple/small/" width="375" height="30"></iframe>
-                    <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/194812/simple/small/" width="375" height="30"></iframe>
-                </div>
-              </a>
-            </li>
-            <p>Ejercicio de clase de visualización 3D con respecto a la música.</p>
-          </div>
-        </div>
-        <div class="col tarjeta">
-          <a href="archivos/arc_1.pdf" target="_blank">
-          <img src="img/img_2.jpg" alt="Berberian">
+    <h2 class="h2">Audiovisual</h2>
+    <hr>
+    <div class="row section">
+      <div class="col-md-5 tarjeta">
+        <a href=""  data-toggle="modal" data-target="#exampleModal">
+          <img src="img/img_1.png" alt="Multiplicidad">
         </a>
-          <p>Ensayo de la pelicula "Berberian studio sound"</p>
+        <p>Este es un mapa de la multiplicidad que se basa en el libro "la multiplicidad" escrito por Italo Calvino.</p>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+          <img src="img/img_1.png" alt="mapa" class="img-fluid">
         </div>
       </div>
+      <div class="col-md-6 tarjeta">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/672948146&color=%23071387&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div class="menu">
+          <li class="nav-esc" id='referencia'>
+            <a href="#referencia" class="btn">
+              <i class="fas fa-list"></i>&nbspReferencias
+              <div class="menuInterno">
+                  <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/398907/simple/small/" width="375" height="30"></iframe>
+                  <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/396968/simple/small/" width="375" height="30"></iframe>
+                  <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/194812/simple/small/" width="375" height="30"></iframe>
+              </div>
+            </a>
+          </li>
+          <p>Ejercicio de clase de visualización 3D con respecto a la música.</p>
+        </div>
+      </div>
+      <div class="col-md-5 tarjeta">
+        <a href="archivos/arc_1.pdf" target="_blank">
+        <img src="img/img_2.jpg" alt="Berberian">
+      </a>
+        <p>Ensayo de la pelicula "Berberian studio sound"</p>
+      </div>
     </div>
-  </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

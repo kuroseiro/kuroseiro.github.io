@@ -13,11 +13,12 @@ p{
   font-size: 2em;
 }
 .section{
-  padding: 3em;
+  padding: 1.5em;
   background-color: #f5f5f5;
 }
 .tarjeta{
   margin: 10px;
+  height: 100%;
   padding: 1em;
   background-color: #fff;
   border-radius: 10px;
